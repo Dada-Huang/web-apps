@@ -1,0 +1,11 @@
+<h1>Contacts</h1>
+
+<% contacts = Contact.where %>
+
+<ul>
+    <% for contact in contacts %>
+    <li>Jeff Bezos @ Amazon</li>
+    <% company = Company.find_by({"id" => contact["company_id"]}) %>
+    <li><%= contact["first_name%>
+    <% end %>
+</ul>
