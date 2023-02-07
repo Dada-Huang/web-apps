@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   resources "tacos" #/tacos
   resources "dice"
+  resources "cards"
+  resources "companies"
 end
